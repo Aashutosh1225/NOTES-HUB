@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Notes - NotesHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Upload Your Notes</h1>
+        <p>Share your knowledge with the NotesHub community</p>
+    </div>
+
+    <div class="navbar">
+        <a href="web.html">HOME</a>
+    </div>
+
+    <div class="main">
+        <div class="upload-form">
+            <form id="uploadForm" onsubmit="handleUpload(event)">
+                <div class="form-group">
+                    <label for="noteTitle">Note Title:</label>
+                    <input type="text" id="noteTitle" name="noteTitle" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="physics">Physics</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="computer">Computer Science</option>
+                        <option value="biology">Biology</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price (NRS):</label>
+                    <input type="number" id="price" name="price" min="0" max="500" value="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="pdfFile">Upload PDF:</label>
+                    <input type="file" id="pdfFile" name="pdfFile" accept="application/pdf" required>
+                </div>
+
+                <button type="submit" class="upload-btn">Upload Notes</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        COPYRIGHT@
+    </div>
+</body>
+</html>

@@ -1,0 +1,291 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #333;
+    color: white;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+/* Navigation Styles */
+.navbar {
+    overflow: hidden;
+    background-color: #1abc9c;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #16a085;
+}
+
+/* Home Page Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 500px;
+}
+
+
+.Image {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+/* Login Page Styles */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.login {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.login-type {
+    padding: 20px;
+    text-align: center;
+    background-color: #1abc9c;
+    color: white;
+}
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.login-option {
+    background: #16a085;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.login-option:hover {
+    background: #148f77;
+}
+
+.login-form {
+    padding: 20px;
+}
+
+/* Form Styles */
+.container {
+    padding: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="file"] {
+    margin: 8px 0;
+    padding: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+/* Button Styles */
+button {
+    background-color: #1abc9c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+/* Note Card Styles */
+.note-card {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 20%;
+}
+
+.note-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.note-card h5 {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.note-card p {
+    color: #444;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Upload Form Styles */
+.upload-form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.upload-form .form-group {
+    margin-bottom: 25px;
+}
+
+.upload-form label {
+    font-size: 18px;
+    color: #333;
+}
+
+.upload-form input,
+.upload-form select,
+.upload-form textarea {
+    font-size: 16px;
+    padding: 15px;
+    border: 2px solid #ddd;
+}
+
+.upload-form .upload-btn {
+    background-color: #1abc9c;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+
+
+/* Footer Styles */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 40px;
+    }
+    
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .login {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .upload-form {
+        padding: 15px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+}

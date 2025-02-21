@@ -1,0 +1,66 @@
+<html>
+    <head>
+      <title>LOGIN PAGE</title>
+      <link rel="stylesheet" href="styles.css">
+      <script src="script.js"></script>
+</head>
+<body>
+
+<div class="login">
+  <div class="login-type">
+    <h2>Select Login Type</h2>
+    <div class="login-options">
+      <button class="login-option" onclick="selectLoginType('creator')">
+        <h3>Creator Login</h3>
+        <p>Upload and manage your notes</p>
+      </button>
+      <button class="login-option" onclick="selectLoginType('reader')">
+        <h3>Reader Login</h3>
+        <p>Browse and purchase notes</p>
+      </button>
+    </div>
+  </div>
+
+  <div id="creator-login" class="login-form" style="display: none;">
+    <form class="loginpage" onsubmit="validateCreatorForm(event)">
+      <div class="container">
+        <img src="img.png" height="30%" width="50%" class="center">
+        <br>
+        <label for="c_uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="c_uname" required>
+
+        <label for="c_psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="c_psw" required>
+        
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" name="remember"> Remember me
+        </label>
+        <span class="psw"> <a href="#">Forgot password?</a></span>
+      </div>
+    </form>
+  </div>
+
+  <div id="reader-login" class="login-form" style="display: none;">
+    <form class="loginpage" onsubmit="validateReaderForm(event)">
+      <div class="container">
+        <img src="img.png" height="30%" width="50%" class="center" >
+        <br>
+        <label for="r_uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="r_uname" required>
+
+        <label for="r_psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="r_psw" required>
+        
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" name="remember"> Remember me
+        </label>
+        <span class="psw"> <a href="#">Forgot password?</a></span>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
